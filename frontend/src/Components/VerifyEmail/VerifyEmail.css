@@ -1,0 +1,218 @@
+/* Layout and Container Styles */
+.verify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 90vw; /* Adjust to fit smaller screens */
+  }
+  
+  .verify-card {
+    background-color: #23272b; /* Lighter dark background */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Limit max width on larger screens */
+    text-align: center;
+  }
+  
+  /* Typography */
+  .verify-card h2 {
+    font-size: 1.8rem;
+    color: rgb(225, 29, 72); /* Red title color */
+    margin-bottom: 1rem;
+  }
+  
+  .verify-card p {
+    color: #a0aec0; /* Gray text for description */
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Styles */
+  .verification-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  
+  /* Input Styles */
+  .verify-input-box {
+    width: 3rem; /* Smaller input box for smaller screens */
+    height: 3rem;
+    background-color: #4a5568; /* Slightly lighter gray */
+    color: white;
+    font-size: 1.5rem; /* Slightly smaller font */
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #4a5568; /* Border matching background */
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: all 0.3s ease;
+  }
+  
+  .verify-input-box:focus {
+    border-color: rgb(225, 29, 72); /* Red border on focus */
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .verify-submit-btn {
+    width: 100%;
+    background-color: rgb(225, 29, 72); /* Pink/Red button */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .verify-submit-btn:hover {
+    background-color: #e05454; /* Darker hover color */
+  }
+  
+  .verify-submit .error-text{
+    color: #ef4444; 
+    font-weight: 400; 
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* For smaller devices (mobile) */
+  @media (max-width: 768px) {
+    .card-container {
+      width: 100%; /* Full width for mobile */
+      padding: 1rem;
+    }
+  
+    .verify-card {
+      padding: 1.5rem;
+    }
+  
+    .verify-card h2 {
+      font-size: 1.5rem; /* Smaller heading */
+    }
+  
+    .verify-card p {
+      font-size: 0.85rem; /* Smaller description text */
+    }
+  
+    .verify-input-box {
+      width: 2.5rem; /* Smaller input box */
+      height: 2.5rem;
+      font-size: 1.25rem;
+    }
+  
+    .verify-submit-btn {
+      padding: 0.6rem; /* Smaller button padding */
+    }
+  }
+  
+  /* For very small devices (small mobile) */
+  @media (max-width: 480px) {
+    .card-container {
+      width: 100%; /* Full width on very small screens */
+    }
+  
+    .verify-card {
+      padding: 1rem;
+    }
+  
+    .verify-card h2 {
+      font-size: 1.3rem; /* Even smaller heading */
+    }
+  
+    .verify-card p {
+      font-size: 0.75rem; /* Even smaller description text */
+    }
+  
+    .verify-input-box {
+      width: 2.2rem; /* Even smaller input box */
+      height: 2.2rem;
+      font-size: 1rem;
+    }
+  
+    .verify-submit-btn {
+      padding: 0.5rem; /* Even smaller button padding */
+    }
+  }
+  
+  /* For larger screens (desktop) */
+  @media (min-width: 1024px) {
+    .card-container {
+      width: 60vw; /* Slightly smaller width for larger screens */
+    }
+  
+    .verify-card h2 {
+      font-size: 2rem; /* Larger heading */
+    }
+  
+    .verify-card p {
+      font-size: 1rem; /* Larger description text */
+    }
+  
+    .verify-input-box {
+      width: 3.5rem; /* Larger input box */
+      height: 3.5rem;
+      font-size: 1.75rem;
+    }
+  
+    .verify-submit-btn {
+      padding: 1rem; /* Larger button padding */
+    }
+  }
+  
+  /* For very small screens (less than 320px) */
+  @media (max-width: 320px) {
+    .card-container {
+      width: 90vw; /* Ensure container fits within small screen */
+      padding: 1rem;
+    }
+  
+    .verify-card {
+      padding: 1rem;
+    }
+  
+    .verify-card h2 {
+      font-size: 1.2rem; /* Reduce font size further for small screens */
+    }
+  
+    .verify-card p {
+      font-size: 0.7rem; /* Reduce description font size */
+    }
+  
+    .input-wrapper {
+      gap: 0.25rem; /* Reduce space between inputs */
+    }
+  
+    .verify-input-box {
+      width: 2rem; /* Even smaller input boxes */
+      height: 2rem;
+      font-size: 0.85rem; /* Reduce font size inside input boxes */
+    }
+  
+    .verify-submit-btn {
+      padding: 0.5rem; /* Smaller padding for submit button */
+      font-size: 0.8rem; /* Reduce button text size */
+    }
+  }
+  
+  

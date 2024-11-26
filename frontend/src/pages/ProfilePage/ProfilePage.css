@@ -1,0 +1,620 @@
+.profile-page {
+  background-color: black;
+  color: #e0e0e0;
+  padding: 2rem;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.submissionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.submissionTitle h2 {
+  color: #e51e49;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Main container */
+.progress-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Top section with progress and stats */
+.progress-history {
+  display: flex;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+.progress-circle {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+
+.message {
+  text-align: center;
+  color: whitesmoke;
+  font-style: italic;
+}
+.message .wish-message {
+  color: #e51e49;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 2rem;
+  /* border-left: 1px solid #404040; */
+}
+
+.stats p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Three cards section */
+.submissions-summary {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.summary > div {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #191c21;
+}
+
+.summary h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.summary p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calendar section */
+.calendar-section {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.calendar-section h2 {
+  color: #e51e49;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.react-calendar {
+  width: 100% !important;
+  background-color: #191c21 !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #ff4444 !important;
+}
+
+.react-calendar__navigation button {
+  color: #e51e49 !important;
+  font-size: x-large !important;
+  background-color: inherit;
+}
+
+.react-calendar__tile {
+  color: #e0e0e0 !important;
+  padding: 0.75em 0.5em !important;
+  font-size: 1.2rem; /* Default font size */
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+  background: #3d3d3d !important;
+  font-size: 1.2rem; /* Slightly larger for today's date */
+}
+
+.react-calendar__tile--active {
+  background: #404040 !important;
+  font-size: 1.2rem; /* Highlight active dates */
+}
+
+.react-calendar__navigation button:hover {
+  background-color: inherit !important;
+}
+.react-calendar__tile:hover {
+  /* background-color: inherit !important; */
+  color: #000000 !important;
+}
+.react-calendar__tile--active {
+  background-color: #404040 !important;
+  color: inherit !important;
+  font-weight: normal !important;
+}
+
+/* .react-calendar__navigation button:active {
+    background-color: #191c21 !important;
+    color: inherit !important;
+    box-shadow: none !important;
+} */
+.react-calendar__navigation button:disabled {
+  background-color: inherit !important;
+}
+
+.react-calendar__navigation button:focus {
+  background-color: inherit !important;
+}
+
+.react-calendar__navigation button:enabled:focus {
+  background-color: inherit !important;
+}
+
+/* .react-calendar__navigation button:enabled:hover {
+    background-color: inherit !important;
+} */
+
+.submissionCompleted {
+  background-color: #4caf4fbe !important;
+}
+
+.submissionIncomplete {
+  background-color: #ffa826aa !important;
+}
+
+.submission-tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  color: #fff;
+  /* padding: 0.5rem 2rem; */
+  border-radius: 4px;
+  margin-top: 1rem;
+  text-align: center;
+  /* padding: 1rem; */
+  border-radius: 8px;
+  /* margin-top: 1rem; */
+  width: max-content;
+  margin: 0rem auto;
+}
+
+.tooltip-date {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-top: 1.5rem;
+  color: #e51e49;
+}
+.submission-tooltip .tooltip-completed {
+  margin-bottom: 0.5rem;
+  color: #4caf50;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  background-color: #4caf4f2b;
+}
+
+.submission-tooltip .tooltip-incomplete {
+  margin-bottom: 0.5rem;
+  color: #ffa726;
+  background-color: rgba(255, 167, 38, 0.2);
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+}
+
+.latest-submissions {
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  overflow-x: auto;
+}
+
+.latest-submissions h2 {
+  color: #e51e49;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #2d2d2d; /* Default background for the table */
+  border-radius: 8px;
+  overflow: hidden;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  text-align: center;
+  align-items: center;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid whitesmoke; /* Divider between rows */
+  text-align: center;
+  text-align: center; /* Center align all text */
+}
+
+th {
+  background-color: #22262b;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #191c21; /* Darker row color */
+}
+
+tr:nth-child(even) {
+  background-color: #22262b; /* Lighter row color */
+}
+
+tr:hover {
+  background-color: #181a1c; /* Highlight color on hover */
+}
+
+/* Status colors */
+.status-completed {
+  color: #4caf50; /* Green for completed */
+  text-align: center; /* Center horizontally */
+  vertical-align: middle; /* Center vertically */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 100%; /* Ensure it takes full height of the cell */
+}
+.status-incomplete {
+  color: #ffa726;
+  text-align: center;
+}
+
+/* Adjust font colors for readability */
+td {
+  color: #e0e0e0;
+}
+
+/* Status colors */
+.easy {
+  color: #4caf50;
+}
+.medium {
+  color: #ffa726;
+}
+.hard {
+  color: #ef5350;
+}
+.status-completed {
+  color: #4caf50;
+}
+.status-incomplete {
+  color: #ffa726;
+}
+.stats .easy {
+  background-color: #4caf4f2b;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.stats .medium {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 167, 38, 0.2);
+}
+.stats .hard {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: rgba(239, 83, 80, 0.271);
+}
+
+/* Loading and error states */
+.profile-page-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.profile-page-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.error-message {
+  color: #ef5350;
+  text-align: center;
+  padding: 2rem;
+  background-color: #242424;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress circle styles */
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #4caf50 !important;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #191c21 !important;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #fff !important;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4d;
+}
+
+.tooltip-goals {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: #000 !important;
+}
+
+.tooltip-goals .goals {
+  color: #e51e49;
+  font-weight: bold;
+  background-color: black !important;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .profile-page {
+    padding: 1rem;
+  }
+
+  .stats {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 2rem;
+    align-items: center;
+  }
+
+  /* Stack summary cards vertically */
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .stats p {
+    font-size: 1rem;
+  }
+
+  /* Adjust table for smaller screens */
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+  }
+
+  /* Ensure proper stacking order */
+  .progress-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .calendar-section {
+    order: 3;
+  }
+
+  .latest-submissions {
+    order: 4;
+  }
+  .submissions-summary {
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+  }
+  .calendar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .progress-history {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  .submissionTitle h2 {
+    font-size: 1.5rem;
+  }
+
+  .progress-history {
+    padding: 1rem;
+  }
+
+  .stats p {
+    font-size: 0.9rem;
+  }
+
+  .summary h3 {
+    font-size: 1rem;
+  }
+
+  .summary p {
+    font-size: 0.9rem;
+  }
+  .react-calendar__navigation button {
+    color: #e51e49 !important;
+    font-size: large !important;
+    background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .latest-submissions {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .calendar-section {
+    width: 65%;
+    margin: auto;
+  }
+  .latest-submissions {
+    width: 90%;
+    margin: auto;
+  }
+  .set-goal-btn {
+    width: 60% !important;
+    margin: auto !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .calendar-section {
+    width: 75%;
+    margin: auto;
+  }
+}
+.submission-goals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submission-tooltip {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    color: #fff;
+    /* padding: 0.5rem 2rem; */
+    border-radius: 4px;
+    margin-top: 1rem;
+    text-align: center;
+    /* padding: 1rem; */
+    border-radius: 8px;
+    /* margin-top: 1rem; */
+    width: max-content;
+    margin: 0rem auto;
+}
+
+.submission-tooltip .tooltip-date {
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #e51e49;
+}
+
+.submission-tooltip .tooltip-stats,
+.submission-tooltip .tooltip-goals {
+  flex: 1;
+  min-width: 200px;
+}
+
+.submission-tooltip .tooltip-completed {
+  margin-bottom: 0.5rem;
+  color: #4caf50;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  background-color: #4caf4f2b;
+}
+
+.submission-tooltip .tooltip-incomplete {
+  margin-bottom: 0.5rem;
+  color: #ffa726;
+  background-color: rgba(255, 167, 38, 0.2);
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 576px) {
+  .submission-tooltip {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submission-tooltip .tooltip-stats,
+  .submission-tooltip .tooltip-goals {
+    width: 100%;
+  }
+}

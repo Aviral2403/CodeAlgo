@@ -1,0 +1,471 @@
+/* Main container styles */
+.code-test-container {
+  height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace-desc-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header navigation styles */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #0e0f10;
+  height: 45px;
+}
+
+.header-nav-left,
+.header-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-dropdown {
+  background-color: #141619;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.language-dropdown:hover {
+  background-color: #202227;
+}
+
+.nav-item button {
+  background: transparent;
+  border: none;
+  color: #b4b4b4;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item button:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+/* Split container styles */
+.split-container {
+  height: calc(100vh - 45px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Code editor styles */
+.code-editor {
+  flex: 1;
+  background-color: #1e1e1e;
+  position: relative;
+}
+
+.code-mirror-editor {
+  height: 100%;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+}
+
+/* Test case section styles */
+.testcase-container {
+  background-color: #1e1e1e;
+  border-top: 1px solid #3e3e3e;
+  display: flex;
+  flex-direction: column;
+}
+
+.testcase-heading {
+  padding: 12px 16px;
+  background-color: #0e0f10;
+}
+
+.testcase-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.testcase-tab-text {
+  color: #e51e49;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.testcase-tab-line {
+  height: 2px;
+  background-color: #e51e49;
+  width: 60px;
+  border: none;
+  margin: 0;
+}
+
+.testcase-list {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  overflow-x: auto;
+  background-color: #0e0f10;
+}
+
+.testcase-item {
+  padding: 6px 12px;
+  background-color: #202227;
+  border-radius: 4px;
+  color: #b4b4b4;
+  cursor: pointer;
+  font-size: 13px;
+  user-select: none;
+}
+
+.testcase-item:hover {
+  background-color: #3e3e3e;
+}
+
+.testcase-item.active {
+  background-color: #e51e49;
+  color: #ffffff;
+}
+
+.testcase-details {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: #0e0f10;
+}
+
+.testcase-label {
+  color: #e51e49;
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+}
+
+.testcase-input,
+.testcase-output {
+  background-color: #202227;
+  padding: 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  margin-bottom: 16px;
+  white-space: pre-wrap;
+}
+
+/* Footer styles */
+.code-editor-footer {
+  padding: 12px 16px;
+  background-color: #141619;
+}
+
+.editor-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-buttons,
+.right-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.console-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: none;
+  color: #b4b4b4;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #2d2d2d;
+}
+
+.console-button:hover {
+  background-color: #3e3e3e;
+}
+
+.run-button,
+.submit-code-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.run-button {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.run-button:hover {
+  background-color: #3e3e3e;
+}
+
+.submit-code-button {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.submit-code-button:hover {
+  background-color: #2d722f;
+}
+
+/* Loading and error states */
+.loading-container,
+.error-message {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Scrollbar styles */
+/* ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3e3e3e;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4e4e4e;
+} */
+
+/* Split.js gutter styles */
+.gutter {
+  background-color: #2d2d2d;
+  position: relative;
+}
+
+.gutter:hover {
+  background-color: #3e3e3e;
+}
+
+.gutter.gutter-vertical {
+  cursor: row-resize;
+  height: 6px;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+  width: 6px;
+}
+
+/* Mobile Layout */
+.workspace-mobile {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #111827; /* bg-gray-900 equivalent */
+}
+
+.workspace-section {
+  flex: none;
+}
+
+/* Desktop Layout */
+.workspace-desktop {
+  display: flex;
+  height: 100vh;
+}
+
+.workspace-panel {
+  overflow: auto;
+}
+
+/* Split.js Styles */
+.split {
+  display: flex;
+}
+
+.gutter {
+  background-color: #4b5563; /* A gray color for the gutter */
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+  width: 10px;
+}
+/* Add these styles to your Workspace.css file */
+
+/* Remove Split.js gutters on mobile */
+@media (max-width: 767px) {
+  .workspace-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+  }
+  .gutter {
+    display: none !important;
+  }
+
+  .split {
+    display: block !important;
+  }
+
+  /* Override Split.js inline styles */
+  .split > div {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Desktop Split.js styles */
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+/* General gutter styles */
+.gutter {
+  background-color: #2d2d2d;
+  position: relative;
+}
+
+.gutter:hover {
+  background-color: #3e3e3e;
+}
+
+.gutter.gutter-horizontal {
+  cursor: col-resize;
+  width: 6px;
+}
+
+/* Base workspace styles */
+.workspace-problem {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.workspace-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.content-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  /* Reset container heights */
+  .workspace-problem,
+  .workspace-mobile,
+  .workspace-section {
+    height: auto;
+    min-height: auto;
+  }
+
+  /* Remove fixed heights and scrollbars */
+  .workspace-content {
+    overflow: visible;
+    height: auto;
+  }
+
+  .content-container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  /* Adjust example cards for mobile */
+  .example-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* Reset split container styles */
+  .split {
+    height: auto !important;
+  }
+
+  .workspace-panel {
+    height: auto !important;
+    overflow: visible;
+  }
+
+  /* Adjust spacing for mobile */
+  .problem-header {
+    margin-bottom: 16px;
+  }
+
+  .problem-description {
+    margin-bottom: 20px;
+  }
+
+  .examples-section {
+    margin-bottom: 20px;
+  }
+
+  .example {
+    margin-bottom: 16px;
+  }
+
+  /* Hide all scrollbars on mobile */
+  .workspace-content::-webkit-scrollbar,
+  .example-card::-webkit-scrollbar,
+  pre::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Reset ScrollArea and other fixed height containers */
+  [data-radix-scroll-area-viewport] {
+    height: auto !important;
+  }
+}
+
+/* Preserve desktop scrolling behavior */
+@media (min-width: 768px) {
+  .workspace-problem {
+    height: 100vh;
+  }
+
+  .workspace-content {
+    overflow-y: auto;
+  }
+}

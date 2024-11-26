@@ -1,0 +1,112 @@
+.code-editor{
+    /* min-height: 50vh; */
+    background-color: #121315!important;
+}
+
+
+
+  /* Optional: Add a hover effect */
+  .code-mirror-editor .cm-line:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+
+
+  .console-output {
+    /* background-color: #1E1E1E; Deep dark background similar to VSCode */
+    color: #D4D4D4; /* Light gray text for readability */
+    font-family: 'Consolas', 'Courier New', monospace;
+    padding: 15px;
+    border-radius: 4px;
+    max-height: 250px;
+    overflow-y: auto;
+    margin: 10px;
+  }
+  
+  .console-output pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Syntax highlighting for console output */
+  .console-output .error {
+    color: #F14C4C; /* Bright red for errors */
+  }
+  
+  .console-output .success {
+    color: #23D160; /* Green for successful outputs */
+  }
+  
+  .console-output .warning {
+    color: #FFA500; /* Orange for warnings */
+  }
+  
+  /* Scrollbar styling for dark theme */
+  .console-output::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .console-output::-webkit-scrollbar-track {
+    background: #2D2D2D;
+  }
+  
+  .console-output::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 5px;
+  }
+  
+  .console-output::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .split-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .split-container > div {
+    overflow: hidden;
+  }
+  
+  .code-editor {
+    min-height: 200px;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  
+  .testcase-container {
+    min-height: 100px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .gutter.gutter-vertical {
+    height: 10px;
+    background-color: #2d2d2d;
+    cursor: row-resize;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .gutter.gutter-vertical::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+  }
+  
+  .gutter.gutter-vertical:hover {
+    background-color: #3e3e3e;
+  }
+
+
+  

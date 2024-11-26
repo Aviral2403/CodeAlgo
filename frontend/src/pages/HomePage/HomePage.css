@@ -1,0 +1,67 @@
+.home-container {
+  background-color: black;
+  color: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+h1 span, h2 span {
+  color: rgb(225, 29, 72);
+}
+
+.card {
+  border: none;
+  box-shadow: 2px 2px 8px rgba(229, 229, 229, 0.75)!important;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Add border transition */
+  border-radius: 10px!important;
+  cursor: pointer!important;
+  background-color: #191c21 !important;
+
+}
+.card-body{
+  background-color: #191c21;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  border: 2px solid whitesmoke; /* Add a border on hover */
+}
+button .custom-hover{
+  text-decoration: none;
+}
+
+.custom-hover:hover {
+  background-color: #e05454 !important;
+  border: 1px solid whitesmoke !important;
+  color: #fff; /* Change the text color on hover */
+  transform: scale(1.05); /* Add a scaling effect */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+  color: whitesmoke!important;
+}
+
+/* Custom card height for larger screens */
+.card-height {
+  min-height: 275px; /* Adjust the minimum height of the cards */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .card-height {
+    min-height: 225px; /* Adjust the height for smaller screens */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 576px) {
+  .card-height {
+    min-height: 260px; /* Adjust the height further down */
+  }
+  h1 span, h2 span{
+    font-size: 2rem;
+  }
+
+}
+

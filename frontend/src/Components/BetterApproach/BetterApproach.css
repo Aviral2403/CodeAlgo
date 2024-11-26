@@ -1,0 +1,93 @@
+.heading-container {
+  max-width: 70%;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 8px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.heading-container strong {
+  color: #e51d48;
+}
+
+.questionName-container {
+  margin-bottom: 20px;
+}
+
+.questionName-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.intuition-container {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intuition-description {
+  margin-bottom: 10px;
+}
+
+.approach-container {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.approach-description {
+  margin-bottom: 10px;
+}
+
+.complexity-container {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Take full viewport height to center vertically */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color:  #e51d48; /* Optional: adjust color if needed */
+}
+
+@media (max-width: 768px) {
+  .heading-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .questionName-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .intuition-container {
+    font-size: 0.95rem;
+  }
+
+  .approach-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .heading-container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .questionName-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .intuition-container {
+    font-size: 0.9rem;
+  }
+
+  .approach-container {
+    padding: 8px;
+  }
+}

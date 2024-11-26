@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.problem-container {
+    min-height: 100vh; 
+    background-color: black;
+    max-width: 100vw;;
+}
+.problem-container .no-results{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.problem-container .no-results span{
+  color: #e51d48;
+}
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 5vh;
+  }
+  
+  .pagination-controls button {
+    background-color:#e51d48;;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #23272b;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls span {
+    font-size: 16px;
+    margin: 0 10px;
+    color: whitesmoke;
+  }

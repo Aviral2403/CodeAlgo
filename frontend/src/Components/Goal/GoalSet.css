@@ -1,0 +1,139 @@
+.goal-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .goal-form-container {
+    background-color: #191c21;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    color: #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .goal-form-container h2 {
+    color: #e51e49;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    background-color: #22262b;
+    color: #e0e0e0;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #e51e49;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  
+  .submit-btn, .cancel-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-btn {
+    background-color: #e51e49;
+    color: #fff;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d41940;
+  }
+  
+  .cancel-btn {
+    background-color: #404040;
+    color: #fff;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #4d4d4d;
+  }
+  
+  .set-goal-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #e51e49;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .set-goal-btn:hover {
+    background-color: #d41940;
+  }
+  
+  /* Add these styles to the existing tooltip styles in your ProfilePage.css */
+  .tooltip-goals {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: #22262b;
+  }
+  
+  .tooltip-goals h4 {
+    color: #e51e49;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tooltip-goals p.easy {
+    color: #4caf50;
+    background-color: #4caf4f2b;
+  }
+  
+  .tooltip-goals p.medium {
+    color: #ffa726;
+    background-color: rgba(255, 167, 38, 0.2);
+  }
+  
+  .tooltip-goals p.hard {
+    color: #ef5350;
+    background-color: rgba(239, 83, 80, 0.271);
+  }
+  
+  .tooltip-goals p {
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }

@@ -1,0 +1,143 @@
+/* Main container styling */
+.problemStatement-container {
+  max-width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+}
+
+/* Question name styling */
+.questionName-container {
+  margin-bottom: 20px;
+}
+
+.questionName-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Question statement and description styling */
+.questionStatement-container {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.problem-description {
+  margin-bottom: 10px;
+}
+
+.note {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #e51d48;
+}
+
+/* Examples container styling */
+.examples-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color:  #191c21;
+  border-radius: 8px;
+}
+
+/* Example number styling */
+.example {
+  margin-bottom: 20px;
+
+}
+
+.example-number {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #cde6f1;
+}
+
+/* Input, result, and explanation styling */
+.input-format,
+.result,
+.explanation {
+  margin-bottom: 5px;
+  color: #cde6f1;
+}
+
+.input-format {
+  color: #cde6f1;
+}
+
+
+.explanation {
+  color: #cde6f1;
+  font-size: 0.95rem;
+}
+.disclaimer{
+    color: #e51d48;
+    margin-top: 10px;
+}
+
+/* Loading state styling */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Take full viewport height to center vertically */
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color:  #e51d48; /* Optional: adjust color if needed */
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .problemStatement-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .questionName-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .questionStatement-container {
+    font-size: 0.95rem;
+  }
+
+  .examples-container {
+    padding: 10px;
+  }
+
+  .input-format,
+  .result,
+  .explanation {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .problemStatement-container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .questionName-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .questionStatement-container {
+    font-size: 0.9rem;
+  }
+
+  .examples-container {
+    padding: 8px;
+  }
+
+  .input-format,
+  .result,
+  .explanation {
+    font-size: 0.85rem;
+  }
+}

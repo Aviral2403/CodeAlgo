@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black!important;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+
+
+.split {
+	display: flex;
+	flex-direction: row;
+}
+
+.gutter {
+	background-color: rgb(26, 26, 26)!important;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.gutter:hover {
+	background-color: #404142!important;
+}
+
+.gutter.gutter-horizontal {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+	cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
+	cursor: row-resize;
+}

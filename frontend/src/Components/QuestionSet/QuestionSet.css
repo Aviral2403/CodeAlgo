@@ -1,0 +1,259 @@
+/* CSS Custom Properties for consistent theming */
+:root {
+  --primary-color: #e51d48;
+  --success-color: rgb(0, 184, 163);
+  --warning-color: rgb(255, 192, 30);
+  --danger-color: rgb(229, 29, 72);
+  --background-dark: #23272b;
+  --text-light: whitesmoke;
+  --tag-background: #797979;
+  
+  /* Spacing variables */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  
+  /* Animation variables */
+  --transition-speed: 0.3s;
+}
+
+/* Main container with improved max-width handling */
+.question-container {
+  max-width: min(65vw, 1200px);
+  margin: var(--spacing-xl) auto var(--spacing-sm);
+  padding: var(--spacing-sm);
+}
+
+/* Question details card with improved hover animation */
+.question-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  background-color: #191c21;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: border-color var(--transition-speed), transform var(--transition-speed);
+  padding: var(--spacing-md);
+}
+
+.question-details:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Row layouts with improved spacing */
+.row-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.name-number {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex: 2;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+
+.q-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.q-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.name-number:hover .q-number,
+.name-number:hover .q-name {
+  color: var(--primary-color);
+}
+
+.status-difficulty {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* Status indicators with improved visual hierarchy */
+.status-completed,
+.status-incomplete,
+.status-unattempted {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.status-completed {
+  color: var(--success-color);
+  /* background-color: rgba(0, 184, 163, 0.1); */
+}
+
+.status-incomplete {
+  color: var(--warning-color);
+  /* background-color: rgba(255, 192, 30, 0.1); */
+}
+
+.status-unattempted {
+  color: var(--danger-color);
+  /* background-color: rgba(229, 30, 73, 0.1); */
+}
+
+/* Difficulty badges with consistent styling */
+.q-difficulty {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.difficulty-easy {
+  color: #4caf50;
+  background-color: #4caf4f47;
+}
+
+.difficulty-medium {
+  color: var(--warning-color);
+  background-color: rgba(255, 192, 30, 0.1);
+}
+
+.difficulty-hard {
+  color: var(--danger-color);
+  background-color: rgba(229, 29, 72, 0.1);
+}
+
+/* Tags section with improved layout */
+.row-two {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.q-tag-container {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.q-tag {
+  background-color: #2d3134;
+  color: var(--text-light);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  transition: transform var(--transition-speed);
+}
+
+.q-tag:hover {
+  transform: translateY(-1px);
+}
+
+/* Icons with improved hover effects */
+.row-three {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.note-icon,
+.youtube-icon,
+.code-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform var(--transition-speed);
+}
+
+.note-icon {
+  color: var(--text-light);
+}
+
+.youtube-icon {
+  color: var(--primary-color);
+}
+
+.code-icon {
+  color: var(--tag-background);
+}
+
+.note-icon:hover,
+.youtube-icon:hover,
+.code-icon:hover {
+  transform: scale(1.15);
+}
+
+/* Improved responsive breakpoints */
+@media (max-width: 1024px) {
+  .question-container {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .question-container {
+    max-width: 90vw;
+  }
+  
+  .row-one {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+  
+  .status-difficulty {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .q-number,
+  .q-name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-container {
+    max-width: 95vw;
+    padding: var(--spacing-xs);
+  }
+  
+  .q-number {
+    display: none;
+  }
+  
+  .name-number {
+    gap: var(--spacing-sm);
+  }
+  
+  .status-difficulty {
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+  }
+  
+  .note-icon,
+  .youtube-icon,
+  .code-icon {
+    font-size: 1.5rem;
+  }
+  
+  .q-tag {
+    font-size: 0.7rem;
+  }
+}

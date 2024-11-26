@@ -1,0 +1,119 @@
+/* VideoExplanation.css */
+
+.video-explanation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: black; /* YouTube-like dark background */
+  color: #fff;
+  min-height: 90vh; /* Occupies the full height of the viewport */
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* Title styling */
+h1 .vidTitle {
+  display: flex;
+  color: #e51d48;
+  font-size: 1.8rem;
+  text-align: center;
+  max-width: 90%;
+  word-wrap: break-word;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+}
+.vidTitle {
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e51d48;
+}
+
+/* Container to make the video responsive and occupy 90% of the screen */
+.video-container {
+  width: 100%;
+  max-width: 1280px; /* Limit maximum width similar to YouTube */
+  aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+  margin: 0 auto;
+  background-color: #000; /* Video background color to blend with the iframe */
+  position: relative; /* Allows padding-top trick for responsiveness */
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Styling for the unavailable image */
+.unavailable-image {
+  max-width: 90%;
+  height: auto;
+  margin: 20px 0;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visuals */
+}
+
+.video-explanation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Takes full screen height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: white;
+  }
+  
+
+/* Responsive Design: Similar adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .vidTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vidTitle {
+    font-size: 1.4rem;
+  }
+  .video-container {
+    padding-top: 56.25%; /* Keeps the 16:9 aspect ratio */
+  }
+}
+
+@media (max-width: 576px) {
+  .vidTitle {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .vidTitle {
+    font-size: 1rem;
+  }
+  .video-container {
+    padding-top: 56.25%; /* Keeps the video responsive and in 16:9 */
+  }
+  span {
+    font-size: 0.8rem;
+  }
+}

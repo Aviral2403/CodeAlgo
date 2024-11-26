@@ -1,0 +1,8 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take full viewport height to center vertically */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color:  #e51d48; /* Optional: adjust color if needed */
+  }
