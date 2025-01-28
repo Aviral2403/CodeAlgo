@@ -5,7 +5,7 @@ import Loader from "../../Components/Loader/Loader";
 import { useState, useEffect } from "react";
 import { useAuthStore } from "../../store/authStore";
 import toast from "react-hot-toast";
-import imageSrc from "/Users/aviralkhandelwal/Desktop/AlgoCode/frontend/src/assets/no-result.png";
+import imageSrc from "../../assets/no-result.png";
 
 
 const ProblemList = () => {
