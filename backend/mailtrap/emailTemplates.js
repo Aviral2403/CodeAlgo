@@ -88,22 +88,22 @@ const WELCOME_ABOARD_TEMPLATE = `
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #e0e0e0;">
   <div style="background: #000000; padding: 20px; text-align: center;">
-    <h1 style="color: white; margin: 0;">Welcome to Reminderly!</h1>
+    <h1 style="color: white; margin: 0;">Welcome to CodeAlgo!</h1>
   </div>
   <div style="background-color: #ffffff; padding: 20px; border-radius: 0 0 5px 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
     <p>Hello <strong>{fullname}</strong>,</p>
-    <p style="color: #d32f2f;"><strong>Thank you for joining Reminderly!</strong></p>
-    <p>With Reminderly, you can easily organize your day. Here’s what you can do:</p>
+    <p style="color: #d32f2f;"><strong>Thank you for joining CodeAlgo!</strong></p>
+    <p>With CodeAlgo, you can easily organize your day. Here’s what you can do:</p>
     <ul>
       <li><span style="color: #d32f2f;"><strong>Add Events</strong></span> to keep track of important tasks.</li>
       <li><span style="color: #d32f2f;"><strong>Set Reminders</strong></span> to ensure you never miss deadlines.</li>
       <li><span style="color: #d32f2f;"><strong>Get Notifications</strong></span> right when you need them.</li>
       <li><span style="color: #d32f2f;"><strong>Sync Across Devices</strong></span> to access your schedule anywhere.</li>
     </ul>
-    <p>Start adding events and managing your time with Reminderly today!</p>
-    <p>If you have any questions, reach out to our support team at <a href="mailto:support@Reminderly.com" style="color: #d32f2f;">support@Reminderly.com</a>.</p>
+    <p>Start adding events and managing your time with CodeAlgo today!</p>
+    <p>If you have any questions, reach out to our support team at <a href="mailto:support@CodeAlgo.com" style="color: #d32f2f;">support@CodeAlgo.com</a>.</p>
     <p>We look forward to helping you stay on track!</p>
-    <p>Best regards,<br>The Reminderly Team</p>
+    <p>Best regards,<br>The CodeAlgo Team</p>
   </div>
   <div style="text-align: center; margin-top: 20px; color: #888; font-size: 0.8em;">
     <p>This is an automated message, please do not reply to this email.</p>
@@ -129,7 +129,7 @@ const PASSWORD_RESET_REQUEST_TEMPLATE = `
   </div>
   <div style="background-color: #ffffff; padding: 20px; border-radius: 0 0 5px 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
     <p>Hello,</p>
-    <p>We received a request to reset your Reminderly password. If you did not request this, please ignore this email.</p>
+    <p>We received a request to reset your CodeAlgo password. If you did not request this, please ignore this email.</p>
     <p>To reset your password, click the button below:</p>
     <div style="text-align: center; margin: 30px 0;">
 <a href="{resetURL}" style="background-color: #d32f2f; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Reset Password</a>`;

@@ -7,6 +7,8 @@ import "react-circular-progressbar/dist/styles.css";
 import "react-calendar/dist/Calendar.css";
 import Loader from "../../Components/Loader/Loader";
 import GoalSet from "../../Components/Goal/GoalSet";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const ProfilePage = () => {
   const { id: userId } = useParams();

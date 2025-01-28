@@ -469,3 +469,16 @@
     overflow-y: auto;
   }
 }
+
+.ͼ1o {
+  background-color: #191e24;
+
+}
+.ͼ1o .cm-gutters {
+  background-color: #191e24;
+  color: #838383;
+}
+.ͼ1o .cm-activeLineGutter {
+  color: #fff;
+  background-color: #20252b;
+}
